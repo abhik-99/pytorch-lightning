@@ -190,5 +190,5 @@ class _MockOptimizer(Optimizer):
 def _validate_scheduler_optimizer(optimizers, lr_schedulers):
     if any(sch['scheduler'].optimizer not in optimizers for sch in lr_schedulers):
         raise MisconfigurationException(
-            "Some schedulers are attatched with an optimizer that wasn't returned from `configure_optimizers`."
+            "Some schedulers are attached with an optimizer that was not returned from `configure_optimizers`."
         )
